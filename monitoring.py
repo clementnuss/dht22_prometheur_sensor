@@ -21,5 +21,5 @@ if __name__ == '__main__':
         args= (temperature, humidity, ))
     logging.info(f"starting the temperature reading thread.")
     temp_thread.start()
-
-    start_http_server(port=8014)
+ 
+    start_http_server(port=9100)
