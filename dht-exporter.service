@@ -1,0 +1,9 @@
+[Unit]
+Description=DHT22 Prometheus exporter
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/pi/dht22_prometheur_sensor/monitoring.py
+[Install]
+WantedBy=multi-user.target
